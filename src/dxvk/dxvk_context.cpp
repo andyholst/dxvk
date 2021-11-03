@@ -23,6 +23,8 @@ namespace dxvk {
       m_features.set(DxvkContextFeature::NullDescriptors);
     if (m_device->features().extExtendedDynamicState.extendedDynamicState)
       m_features.set(DxvkContextFeature::ExtendedDynamicState);
+    if (m_device->features().khrDynamicRendering.dynamicRendering)
+      m_features.set(DxvkContextFeature::DynamicRendering);
   }
   
   

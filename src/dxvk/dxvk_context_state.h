@@ -60,6 +60,7 @@ namespace dxvk {
   enum class DxvkContextFeature {
     NullDescriptors,
     ExtendedDynamicState,
+    DynamicRendering,
   };
 
   using DxvkContextFeatures = Flags<DxvkContextFeature>;
